@@ -18,7 +18,7 @@ import static org.mockito.BDDMockito.*;
 
 
 @ExtendWith(MockitoExtension.class)
-public class TestControllerTest {
+class TestControllerTest {
 
 	@InjectMocks
 	private TestController controller;
@@ -28,7 +28,7 @@ public class TestControllerTest {
 
 	@Test
 	@DisplayName("getHello")
-	public void test() throws Exception {
+	void test() throws Exception {
 		// given
 		given(service.findByName(anyString())).willReturn(new TestDto("Tony"));
 
