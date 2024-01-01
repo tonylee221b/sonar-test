@@ -1,2 +1,5 @@
 rootProject.name = 'test'
 include 'sub_test'
+include 'sub_test:sub_sub_test'
+findProject(':sub_test:sub_sub_test')?.name = 'sub_sub_test'
+
